@@ -17,3 +17,42 @@
 ## In what way will spinach helps you to master DevOps?
 
 - Spinach is not directly related to mastering DevOps, it is a leafy green vegetable that is known to be high in nutrients and beneficial for your health in general. However, having a good health in general can help you to stay focused and motivated, which in turn can help you in mastering any field, including DevOps.
+
+# Starting with Postgres
+
+DL Postgres image :
+
+```docker pull postgres```
+
+See Docker images : 
+
+```docker images```
+
+Run postgres Image :
+
+```docker run --name mypostgres -e POSTGRES_PASSWORD=mysecretpassword -d -p 5432:5432 postgres```
+
+Show containers running on your machine :
+
+```Docker ps```
+
+Stop the container running :
+
+```docker stop ID```
+
+Remove the container :
+
+```docker rm ID```
+
+Run a container on a specific version of PostgresSQL :
+
+```docker run --name mypostgres94 -e POSTGRES_PASSWORD=mysecretpassword -d -p 5432:5432 postgres:9.4```
+
+Connect to your postgres container :
+
+```sudo docker exec -it ID  psql -U postgres```
+
+
+
+
+
