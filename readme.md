@@ -50,7 +50,13 @@ Run a container on a specific version of PostgresSQL :
 
 Connect to your postgres container :
 
-```sudo docker exec -it ID  psql -U postgres```
+```sudo docker exec -it mypostgres94  psql -U postgres```
+
+Pour enregistrer les données du container il faut ajouter l'option -v a la commande docker run:
+
+```
+-v /path/on/host:/path/in/container
+```
 
 
 
