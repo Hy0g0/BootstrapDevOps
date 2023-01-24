@@ -1,6 +1,9 @@
 {
   "name": "hello-world",
   "description": "Hello World",
+  "scripts": {
+    "start": "node app.js"
+  },
   "version": "0.0.1",
   "private": true,
   "dependencies": {

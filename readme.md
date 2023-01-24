@@ -62,20 +62,34 @@ Run a container on a specific version of PostgresSQL :
 docker run --name mypostgres94 -e POSTGRES_PASSWORD=mysecretpassword -d -p 5432:5432 postgres:9.4
 ```
 
+To save container data use option -v to the docker run command:
+
+```
+-v /path/on/host:/path/in/container
+```
+
 Connect to your postgres container :
 
 ```
 sudo docker exec -it mypostgres94  psql -U postgres
 ```
 
-Pour enregistrer les données du container il faut ajouter l'option -v a la commande docker run:
+get localtime of your container : 
 
 ```
--v /path/on/host:/path/in/container
+select current_time at time zone 'brt';
 ```
 
+to display container logs :
 
+```
+docker logs -f mypostgres94
+```
 
+# Time to craft 
 
+run command to build your own container for the node app:
 
-
+```
+docker build -t my-app .
+```
