@@ -93,3 +93,8 @@ run command to build your own container for the node app:
 ```
 docker build -t my-app .
 ```
+#  TIME TO CRAFT THE CRAFTER
+
+```
+docker-compose up
+```
