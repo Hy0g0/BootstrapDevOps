@@ -22,41 +22,58 @@
 
 DL Postgres image :
 
-```docker pull postgres```
+```
+docker pull postgres
+```
 
 See Docker images : 
 
-```docker images```
+```
+docker images
+```
 
 Run postgres Image :
 
-```docker run --name mypostgres -e POSTGRES_PASSWORD=mysecretpassword -d -p 5432:5432 postgres```
+```
+docker run --name mypostgres -e POSTGRES_PASSWORD=mysecretpassword -d -p 5432:5432 postgres
+```
 
 Show containers running on your machine :
 
-```Docker ps```
+```
+Docker ps
+```
 
 Stop the container running :
 
-```docker stop ID```
+```
+docker stop ID
+```
 
 Remove the container :
 
-```docker rm ID```
+```
+docker rm ID
+```
 
 Run a container on a specific version of PostgresSQL :
 
-```docker run --name mypostgres94 -e POSTGRES_PASSWORD=mysecretpassword -d -p 5432:5432 postgres:9.4```
+```
+docker run --name mypostgres94 -e POSTGRES_PASSWORD=mysecretpassword -d -p 5432:5432 postgres:9.4
+```
 
 Connect to your postgres container :
 
-```sudo docker exec -it mypostgres94  psql -U postgres```
+```
+sudo docker exec -it mypostgres94  psql -U postgres
+```
 
 Pour enregistrer les données du container il faut ajouter l'option -v a la commande docker run:
 
 ```
 -v /path/on/host:/path/in/container
 ```
+
 
 
 
